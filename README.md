@@ -7,4 +7,4 @@
 https://github.com/avanthay/zhaw_depot
 
 ####Heroku deployement
-http://blooming-fjord-8116.herokuapp.com/products
+http://blooming-fjord-8116.herokuapp.com
