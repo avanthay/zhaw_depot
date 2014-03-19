@@ -66,4 +66,21 @@ class ProductTest < ActiveSupport::TestCase
 		assert_equal [I18n.translate('errors.messages.taken')],
 		product.errors[:title]
 	end
+
+	test "product price must be given in swiss francs" do
+		product = Product.new(title: "My product title",
+			description: "blabla",
+			image_url: "bla.gif")
+
+		product.price = 1.12
+		assert product.invalid?
+		assert_equal ["must be a muliple of 0.05"], product.errors[:price]
+
+		product.price = 1.10
+		assert product.valid?
+
+		product.price = 1.15
+		assert product.valid?
+	end
+
 end

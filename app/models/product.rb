@@ -7,5 +7,13 @@ class Product < ActiveRecord::Base
 		with: %r{\.(gif|jpg|png)\Z}i,
 		message: 'must be a URL for GIF, JPG or PNG image.'
 	}
+	validate :is_swiss_francs
+
+
+	def is_swiss_francs
+		if (price != nil && price % 0.05 != 0)
+			errors.add(:price, 'must be a muliple of 0.05')
+		end
+	end
 
 end

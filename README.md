@@ -7,4 +7,4 @@
 https://github.com/avanthay/zhaw_depot
 
 ####Heroku deployement
-http://avanthay.herokuapp.com/products
+http://avanthay-zhaw-depot.herokuapp.com/products
