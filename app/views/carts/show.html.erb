@@ -12,6 +12,6 @@
 	<% end %>
 	<li class="price_sum">
 		<span class="price_sum_title">Total</span>
-		<span class="price_sum_amount"><%= @cart.get_total_price %></span>
+		<span class="price_sum_amount"><%= number_to_currency_swiss(@cart.get_total_price) %></span>
 	</li>
 </ul>
