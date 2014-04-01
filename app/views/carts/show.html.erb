@@ -1,0 +1,17 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+<h2>Your Pragmatic Cart</h2>
+<ul>    
+	<% @cart.line_items.each do |item| %>
+	<li class="product_item">
+		<span class="product_title"><%= item.product.title %></span>
+		<span class="product_price"><%= number_to_currency_swiss(item.product.price) %></span>
+	</li>
+	<% end %>
+	<li class="price_sum">
+		<span class="price_sum_title">Total</span>
+		<span class="price_sum_amount"><%= @cart.get_total_price %></span>
+	</li>
+</ul>

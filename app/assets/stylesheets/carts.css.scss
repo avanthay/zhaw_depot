@@ -1,0 +1,17 @@
+// Place all the styles related to the Carts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.product_item, .price_sum {
+	width: 30%;
+	list-style-type: none;
+}
+
+.product_price, .price_sum_amount {
+	float: right;
+}
+
+.price_sum {
+	font-weight: bold;
+	margin-top: 20px;
+}
