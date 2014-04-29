@@ -1,10 +1,10 @@
 #Ruby on Rails: Projekt 'Depot'
 
-###Aus dem Fach 'Web Programmieren 2' an der ZHAW
+### Aus dem Fach 'Web Programmieren 2' an der ZHAW
 
 
-####Github repo
+#### Github repo
 https://github.com/avanthay/zhaw_depot
 
-####Heroku deployement
+#### Heroku app
 http://avanthay-zhaw-depot.herokuapp.com/products
