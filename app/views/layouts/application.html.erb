@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Dave's Depot</title>
+	<title>Dave's small Shop</title>
 	<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	<%= csrf_meta_tags %>
 </head>
 <body class="<%= controller.controller_name %>">
 	<div id="banner">
-		<%= @page_title || "Pragmatic Bookshelf" %>
+		<%= @page_title || "Dave's small Shop" %>
 	</div>
 	<div id="columns">
 		<div id="side">
 			<ul>
 				<li><a href="/.">Home</a></li>
-				<li><a href="#FAQ">Questions</a></li>
-				<li><a href="#News">News</a></li>
-				<li><a href="/products">Manage Products</a></li>
+				<li><a href="<%= cart_path(Cart.find(session[:cart_id])) %>">My Cart</a></li>
 			</ul>
 		</div>
 		<div id="main">

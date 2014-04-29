@@ -3,8 +3,21 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .product_item, .price_sum {
-	width: 30%;
+	width: 40%;
 	list-style-type: none;
+	clear: both;
+	height: 20px;
+	margin-left: 20%;
+}
+
+.product_quantity {
+	float: left;
+	width: 50px;
+}
+
+.product_title {
+	float: left;
+	margin-left: 40px;
 }
 
 .product_price, .price_sum_amount {
@@ -14,4 +27,5 @@
 .price_sum {
 	font-weight: bold;
 	margin-top: 20px;
+	border-top: solid 1px;
 }

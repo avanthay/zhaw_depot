@@ -4,20 +4,14 @@
 
 /* START_HIGHLIGHT */
 .store {
-  h1 {
-    margin: 0;
-    padding-bottom: 0.5em;
-    font:  150% sans-serif;
-    color: #226;
-    border-bottom: 3px dotted #77d;
-  }
 
   /* An entry in the store catalog */
   .entry {
     overflow: auto;
-    margin-top: 1em;
-    border-bottom: 1px dotted #77d;
+    border-bottom: 1px dashed darkgray;
     min-height: 100px;
+    width: 80%;
+    margin: 1em auto 0 auto;
 
     img {
       width: 80px;
@@ -32,22 +26,49 @@
       margin-left: 100px;
       margin-top: 0;
       margin-bottom: 2px;
-      color: #227;
+      color: #428bca;
     }
 
     p, div.price_line {
       margin-left: 100px;
       margin-top: 0.5em; 
-      margin-bottom: 0.8em; 
+      margin-bottom: 0.8em;
+      color: darkgray;
       form, div {
         display: inline;
       }
     }
 
     .price {
-      color: #44a;
+      color: #428bca;
       font-weight: bold;
       margin-right: 3em;
+    }
+
+    input {
+      color: #fff;
+      background-color: #f0ad4e;
+      border-color: #eea236;
+      display: inline-block;
+      margin-bottom: 0;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid transparent;
+      white-space: nowrap;
+      padding: 5px 10px;
+      font-size: 12px;
+      line-height: 1.5;
+      border-radius: 3px;
+    }
+
+    .button_to {
+      float: right;
+      clear: both;
+      margin-bottom: 10px;
+      margin-right: 60px;
     }
   }
 }

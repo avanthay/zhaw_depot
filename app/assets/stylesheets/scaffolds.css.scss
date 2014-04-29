@@ -4,6 +4,12 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  h1 {
+    font-variant: small-caps;
+    color: darkgray;
+    margin-bottom: 40px;
+    font-size: x-large;
+  }
 }
 
 p, ol, ul, td {

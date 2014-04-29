@@ -16,11 +16,11 @@
 
 /* START_HIGHLIGHT */
 #banner {
-  background: #9c9;
+  background: #428bca;
   padding: 10px;
   border-bottom: 2px solid;
   font: small-caps 40px/40px "Times New Roman", serif;
-  color: #282;
+  color: #fff;
   text-align: center;
 
   img {
@@ -38,7 +38,7 @@
 }
 
 #columns {
-  background: #141;
+  background: #5bc0de;
 
   #main {
     margin-left: 17em;
@@ -50,15 +50,20 @@
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #141;
+    background: #5bc0de;
 	
     ul {
       padding: 0;
       li {
         list-style: none;
         a {
-          color: #bfb;
+          color: #fff;
           font-size: small;
+          text-decoration: inherit;
+        &:hover {
+          color: #428bca;
+          background: none;
+          }
         }
       }
     }
