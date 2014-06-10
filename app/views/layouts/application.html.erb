@@ -19,10 +19,6 @@
 			<% end %>
 			<ul>
 				<li><a href="/.">Home</a></li>
-				<% @cart_id = session[:cart_id] %>
-				<% if @cart_id != nil %>
-				<li><a href="<%= cart_path(Cart.find(@cart_id)) %>">My Cart</a></li>
-				<% end %>
 			</ul>
 		</div>
 		<div id="main">

@@ -89,22 +89,49 @@
   }
 }
 /* END_HIGHLIGHT */
-.depot_form { fieldset {
-  background: #efe;
-  legend {
-    color: #dfd;
-    background: #141; font-family: sans-serif; padding: 0.2em 1em;
-    } }
-    form { label {
+.depot_form { 
+  fieldset {
+    background: #CCFFFF;
+    legend {
+      color: white;
+      background: #428bca; 
+      font-family: 
+      sans-serif; 
+      padding: 0.2em 1em;
+    }
+  }
+  form {
+    label {
       width: 5em;
-      float: left; text-align: right; padding-top: 0.2em; margin-right: 0.1em; display: block;
+      float: left; 
+      text-align: right; 
+      padding-top: 0.2em; 
+      margin-right: 0.1em; 
+      display: block;
     }
-    select, textarea, input { margin-left: 0.5em;
+    select, textarea, input { 
+      margin-left: 0.5em;
     }
-    .submit { margin-left: 4em;
+    .submit { 
+      margin-left: 4em;
     }
     br {
       display: none
     }
   }
+}
+
+input[type="submit"] {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #428bca;
+  white-space: nowrap;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  background-color: white;
 }
